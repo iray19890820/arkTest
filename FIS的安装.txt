@@ -1,0 +1,34 @@
+先去下载node.js环境
+下载jdk配置java环境
+安装appserv软件（php需要的） 
+
+
+
+
+
+
+
+
+
+首先需要检测 php, java, nodejs 环境；
+    php -v
+    java -version
+    node -v
+    正常输出就行
+	（因为fis基于这三个环境）
+安装fis：
+    npm install --registry http://npm.cbyun.com -g fis
+如果卡在某一步很久，ctrl+c重新执行一次
+检测是否安装正确：
+    fis -v
+
+编译（切换到项目根目录执行）：
+    fis release -w
+        -w是即时编译，代码有修改会自动编译
+
+启动fis（自动生成服务器环境并会弹出新窗口）：
+          fis server start
+应该会提示如下信息：
+    browse http://127.0.0.1:8080/
+
+刘海明 -  说: (2014-07-14 18:40:01)
